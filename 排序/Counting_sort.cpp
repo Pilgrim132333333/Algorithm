@@ -13,7 +13,7 @@ class Counting_sort
     void Solution(int* input,int size)
     {
         int min=std::numeric_limits<int>::max();
-        int max=std::numeric_limits<int>::min();
+        int max+=std::numeric_limits<int>::min();
         for(int i=0;i<size;i++)
         {
             if(input[i]>max)
@@ -23,6 +23,8 @@ class Counting_sort
             if(input[i]<min)
             {
                 min=input[i];
+
+                
             }
         }
         int middle_size=max-min+1;
